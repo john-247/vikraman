@@ -1,0 +1,21 @@
+.inner-pro {
+  padding-top: 100px;
+  width: 100%;
+}
+.inner-pro h4 {
+  text-align: center;
+  letter-spacing: 0.4rem;
+  color: grey;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

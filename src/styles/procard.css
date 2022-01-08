@@ -1,0 +1,52 @@
+.procard {
+  width: 45%;
+  display: inline-block;
+  padding: 1rem;
+  margin: 2%;
+  min-height: 500px;
+  max-height: 500px;
+  background-color: crimson;
+  cursor: pointer;
+  position: relative;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+.procard:hover .overlay {
+  display: block;
+}
+
+.inner-overlay {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .procard {
+    width: 100%;
+  }
+}

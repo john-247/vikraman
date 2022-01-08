@@ -1,0 +1,178 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+
+  color: #191919;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.container {
+  padding: 2rem 3rem;
+}
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.brand {
+  letter-spacing: 0.3rem;
+}
+.brand:hover h1,
+.brand:hover h6 {
+  color: grey;
+  transition: 0.4s;
+}
+.brand h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: 0.4s;
+}
+.brand h6 {
+  margin-top: auto;
+  transition: 0.4s;
+}
+.menu {
+  position: relative;
+}
+.menu button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.menu button:hover {
+  color: grey;
+  transition: 0.4s;
+}
+.menu button:hover span {
+  background: #575656;
+  transition: 0.4s;
+}
+.menu span {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: #191919;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+.menu .ham .line-1 {
+  position: relative;
+  top: -4px;
+}
+.menu .ham .line-3 {
+  position: relative;
+  top: 4px;
+}
+
+.hamburger-menu {
+  display: none;
+
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.hamburger-menu-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #191919;
+}
+.menu-layer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background: rgb(209, 54, 54);
+}
+.wrapper {
+  position: relative;
+}
+.menu-links {
+  position: relative;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-links nav {
+  display: block;
+}
+
+.menu-links li {
+  text-align: center;
+  position: relative;
+  font-size: 6rem;
+  font-weight: 700;
+  height: 135px;
+}
+
+.menu-links li a {
+  color: white;
+  display: inline-block;
+}
+.menu-links li a:hover {
+  color: #191919;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .menu-links li {
+    font-size: 2rem;
+    height: 80px;
+  }
+  .brand {
+    width: 50%;
+  }
+}

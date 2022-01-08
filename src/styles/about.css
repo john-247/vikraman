@@ -1,0 +1,136 @@
+.about-wrapper {
+  padding: 100px 10rem 150px;
+}
+
+.inner-wrapper {
+  text-align: justify;
+}
+.inner-wrapper h4 {
+  color: grey;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+.inner-wrapper h1 {
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.inner-wrapper h3 {
+  line-height: 1.5;
+  color: grey;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.about-img {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.services {
+  padding: 100px 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.service,
+.techs {
+  width: 45%;
+}
+.service h4,
+.techs h4 {
+  color: grey;
+}
+.service p,
+.techs p {
+  line-height: 2;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.service p em,
+.techs p em {
+  margin: 0 10px;
+}
+
+.experience {
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience h4 {
+  color: grey;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+}
+
+.experience h3 {
+  line-height: 1.7;
+  letter-spacing: 0.07rem;
+}
+.table {
+  width: 100%;
+  margin-top: 50px;
+}
+.table .line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 100px 0;
+  }
+  .experience {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-wrapper {
+    padding: 100px 0 0 0;
+  }
+  .inner-wrapper {
+    text-align: center;
+  }
+  .inner-wrapper h1 {
+    font-size: 1.7rem;
+  }
+  .services {
+    padding: 100px 0;
+    flex-direction: column;
+  }
+  .service,
+  .techs {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .experience {
+    padding: 0;
+    text-align: center;
+  }
+  .experience h3 {
+    letter-spacing: 0;
+  }
+  .table .line {
+    display: block;
+  }
+}

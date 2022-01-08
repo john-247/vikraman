@@ -1,0 +1,110 @@
+footer {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+}
+.action {
+  display: flex;
+  flex-direction: column;
+}
+.call-action {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.call-action h3 {
+  font-weight: 300;
+  color: grey;
+  letter-spacing: 0.3rem;
+}
+.call-action h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  position: relative;
+}
+
+.call-action h1 a::after {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: 6px;
+  background-color: #191919;
+}
+
+.call-action h1:hover > a::after {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.contact-foot {
+  height: 50vh;
+  width: 100%;
+  text-align: left;
+  padding-top: 5rem;
+  display: flex;
+}
+.contact-foot h2 {
+  font-weight: 600;
+  line-height: 2rem;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.info,
+.availability {
+  width: 50%;
+  display: inline-block;
+  padding: 0 3rem;
+}
+
+.info p,
+.availability p {
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: #545353;
+}
+.info ul {
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+}
+.info ul span {
+  color: #545353;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .contact-foot {
+    text-align: center;
+    padding-top: 0;
+    display: block;
+    height: max-content;
+  }
+  .info,
+  .availability {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}

@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import "../styles/projects.css";
+import clock from "../clock.png";
+import todo from "../todo.png";
+import video from "../video.png";
+import widgets from "../widgets.png";
 
 const Projects = () => {
   return (
@@ -14,10 +18,26 @@ const Projects = () => {
     >
       <div className="inner-pro">
         <h4>PROJECTS</h4>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard
+          img={clock}
+          title="CLOCK"
+          link=" https://clock-37c06.web.app/"
+        />
+        <ProjectCard
+          img={video}
+          title="VIDEO"
+          link="https://video-ec140.web.app/"
+        />
+        <ProjectCard
+          img={todo}
+          title="TODO-APP"
+          link="https://todo-app-28045.web.app/"
+        />
+        <ProjectCard
+          img={widgets}
+          title="WIDGETS"
+          link="https://widgets-74b43.web.app/"
+        />
       </div>
     </motion.div>
   );

@@ -22,7 +22,7 @@ const Projects = () => {
         <h4>PROJECTS</h4>
         <ProjectCard
           img={netflix}
-          title="COVID-19 TRACKER"
+          title="NETFLIX-CLONE"
           link=" https://netflix-1b362.web.app/"
         />
         <ProjectCard

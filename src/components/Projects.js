@@ -7,6 +7,7 @@ import todo from "../todo.png";
 import video from "../video.png";
 import widgets from "../widgets.png";
 import coronaTracker from "../coronaTracker.png";
+import netflix from "../netflix.png";
 
 const Projects = () => {
   return (
@@ -19,6 +20,11 @@ const Projects = () => {
     >
       <div className="inner-pro">
         <h4>PROJECTS</h4>
+        <ProjectCard
+          img={netflix}
+          title="COVID-19 TRACKER"
+          link=" https://netflix-1b362.web.app/"
+        />
         <ProjectCard
           img={coronaTracker}
           title="COVID-19 TRACKER"

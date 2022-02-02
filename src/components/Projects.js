@@ -8,6 +8,7 @@ import video from "../video.png";
 import widgets from "../widgets.png";
 import coronaTracker from "../coronaTracker.png";
 import netflix from "../netflix.png";
+import airbnb from "../airbnb.png";
 
 const Projects = () => {
   return (
@@ -20,6 +21,11 @@ const Projects = () => {
     >
       <div className="inner-pro">
         <h4>PROJECTS</h4>
+        <ProjectCard
+          img={airbnb}
+          title="AIRBNB-CLONE"
+          link=" https://airbnb-c061d.web.app/"
+        />
         <ProjectCard
           img={netflix}
           title="NETFLIX-CLONE"
